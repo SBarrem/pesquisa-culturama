@@ -13,7 +13,7 @@
         <form action="" method="get">
             <fieldset>
             <!-- Dados pessoais -->
-            <!-- <legend>Dados pessoais</legend>
+            <legend>Dados pessoais</legend>
 
             <label for="name">Nome</label>
             <input id="name" type="text" name="userName" required>
@@ -32,11 +32,12 @@
 <br>
             <label for="image">Upload de foto</label>
             <input id="image" type="file" accept="image/*" name="userImage">
-<br> -->
+<br> 
             </fieldset>
  
             <fieldset>
-                 <!-- <legend>Perfil</legend>
+                <!-- Perfil -->
+                  <legend>Perfil</legend>
 
                 <p>Gênero</p>
                 <input id="fem" type="radio" name="userGender" value="Feminino">
@@ -57,6 +58,7 @@
                     <option value="casado">União estável</option>
 
                 </select>
+                <!-- selecione o estado -->
 <label for="userState">Estado:</label>
 <select id="userState" name="userState">
     <option value="Acre">Acre</option>
@@ -89,7 +91,7 @@
 </select>
 
         <label for="userCity">Cidade: </label>
-        <input id="userCity" type="text" id="userCity" name="userCity" autocomplete="address-level2" placeholder="Ex.: José Bonifácio">  -->
+        <input id="userCity" type="text" id="userCity" name="userCity" autocomplete="address-level2" placeholder="Ex.: José Bonifácio">
             </fieldset>
 
             <fieldset>
@@ -122,6 +124,26 @@
 
             </fieldset>
 
+                <fieldset>
+                    <legend>Opinião</legend>
+                    <p>O que acha da qualidade do nosso serviço?</p>
+                    <input type="radio" name="userOption" id="otima">
+                    <label for="otima">Ótima</label>
+                    <br>
+                    <input type="radio" name="userOption" id="boa">
+                    <label for="boa">Boa</label>
+                    <br>
+                    <input type="radio" name="userOption" id="regular">
+                    <label for="regular">Regular</label>
+                    <br>
+                    <input type="radio" name="userOption" id="ruim">
+                    <label for="ruim">Ruim</label>
+                    <br>
+
+                    <label for="comment">Deixe sua opinião:</label>
+                    <br>
+                    <textarea name="userComment" id="comment" placeholder="Digite aqui sua opinião..."></textarea>
+                </fieldset>
             
             <button type="submit">Enviar</button>
         </form>

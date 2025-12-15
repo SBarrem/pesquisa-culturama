@@ -20,7 +20,7 @@
         <h1>Pesquisa de opinião</h1>
     </header>
     <section>
-        <form action="" method="get">
+        <form action="sucesso.html" method="get">
             <fieldset>
             <!-- Dados pessoais -->
             <legend>Dados pessoais</legend>
@@ -38,10 +38,12 @@
             <input id="email" type="email" name="userEmail" required>
 <br>
             <label for="phoneNumber">Telefone</label>
-            <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número de telefone ">
+            <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número de telefone " aria-describedby="phoneHelp">
+            <small id="phoneHelp">Preencha com 11 dígitos no formato: DDD + número sem espaço ou hífen.</small>
 <br>
             <label for="image">Upload de foto</label>
-            <input id="image" type="file" accept="image/*" name="userImage">
+            <input id="image" type="file" accept="image/*" name="userImage" aria-describedby="imageHelp">
+            <small id="imageHelp">Envie uma foto no formato PNG ou JPEG</small>
 <br> 
             </fieldset>
  
@@ -166,8 +168,8 @@
 
                 </fieldset>
             
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
+            <button type="submit" aria-label="Enviar dados do formulário">Enviar</button>
+            <button type="reset" aria-label="Limpar dados do formulário">Limpar</button>
         </form>
     </section>
     </main>
